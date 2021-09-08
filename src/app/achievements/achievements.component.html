@@ -1,18 +1,43 @@
-<div class="container main-container pt-3">
-        <div class="row mt-3 pt-3" style="display: flex;
+<div class="container main-container pt-3 pb-5">
+    <!-- <h2 class="text-white" style="font-family: Roboto Slab, sans-serif; text-align: center;">I have published following courses on Udemy along with my teammates. </h2> -->
+        <h2 class="text-warning mb-3 pb-3 ps-2 pt-3">Couses Published by Me</h2>
+        <div class="row mt-3 pt-3 pb-3 ps-3 align-items-center " style="display: flex;
         border: 2px solid #ffc107;
-        border-radius: 8px;" *ngFor="let achievement of achievements; index as i">
+        border-radius: 8px;" *ngFor="let achievement of courses; index as i">
             <!-- <div *ngIf="i%2==0"zzz> -->
                 <div class="col">
                     <h3 class="text-white">{{achievement.name}}</h3>
                     <h5 class="text-warning">{{achievement.description}}</h5>
+                    <!-- <h5 class="text-white">{{achievement.course_url}} hello</h5> -->
+
                 </div>
                 <div class="col">
                     <img src="{{achievement.location}}" alt="" height="80%" width="80%">
+                    <a href="{{achievement.course_url}}" target="_blank"><figcaption class="text-white">Checkout course here</figcaption></a>
                 </div>
            
 
         </div>
-    
+        <br>
+        <br>
+
+
+        <h2 class="text-warning mb-3 pb-3 ps-2 pt-3">Academic Achievements</h2>
+
+        <div class="row mt-3 pt-3 pb-3 ps-3 align-items-center" style="display: flex;
+        border: 2px solid #ffc107;
+        border-radius: 8px;" *ngFor="let achievement of academics; index as i">
+            <!-- <div *ngIf="i%2==0"zzz> -->
+                <div class="col">
+                    <img src="{{achievement.location}}" alt="" height="80%" width="80%">
+                </div>
+                <div class="col">
+                    <h3 class="text-white">{{achievement.name}}</h3>
+                    <h5 class="text-warning">{{achievement.description}}</h5>
+                </div>
+                
+           
+
+        </div>
 
 </div>

@@ -3,5 +3,6 @@ export class Achievement{
     name:string | any;
     description: string | any;
     location: string| any;
-    type: string | any;   
+    type: string | any;
+    course_url:string|any;   
 }
