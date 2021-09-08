@@ -1,0 +1,30 @@
+<p>projects works!</p>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col d-flex justify-content-center" *ngFor="let l of projects">
+        <div class="card m-2 border-2 border-secondary" style="width: 20rem;">
+          <img class="card-img-top" src="{{l.image_location}}"  alt="Card image cap" height="200px">
+          <div class="card-body d-flex flex-column">
+              
+            <h5 class="card-title text-center"><b>{{l.name}}</b></h5>
+            <p class="card-text">{{l.description}}</p>
+            <p class="card-text"><b>Technologies Used: </b>{{l.technologies}}</p>
+            <div class="pb-3 d-flex justify-content">
+                <a *ngIf="l.project_url.length != ''" href="{{l.project_url}}" target="_blank" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-sm-6 d-flex justify-content-center">
+        <div class="card" style="width: 20rem;"">
+          <img class="card-img-top" src="" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Heading 2</h5>
+            <p class="card-text">some text</p>
+            <a href="#" class="btn btn-primary">a button</a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  

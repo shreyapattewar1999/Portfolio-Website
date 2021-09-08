@@ -1,0 +1,11 @@
+.main-container{
+    padding-top: 5px;
+    /* min-height: 100vh; */
+}
+
+.main_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh
+}

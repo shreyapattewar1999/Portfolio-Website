@@ -1,0 +1,18 @@
+<div class="container main-container pt-3">
+        <div class="row mt-3 pt-3" style="display: flex;
+        border: 2px solid #ffc107;
+        border-radius: 8px;" *ngFor="let achievement of achievements; index as i">
+            <!-- <div *ngIf="i%2==0"zzz> -->
+                <div class="col">
+                    <h3 class="text-white">{{achievement.name}}</h3>
+                    <h5 class="text-warning">{{achievement.description}}</h5>
+                </div>
+                <div class="col">
+                    <img src="{{achievement.location}}" alt="" height="80%" width="80%">
+                </div>
+           
+
+        </div>
+    
+
+</div>

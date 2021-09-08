@@ -1,0 +1,19 @@
+.row{
+    display: flex;
+    /* align-items: center; */
+}
+body{
+    background-color: #1f2235;
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+.m-heading{
+    font-family: "Roboto Slab", sans-serif;
+}
+html, body { height: 100%; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+.star {
+    font-size: 2rem;
+    color: #ffc107;
+  }
