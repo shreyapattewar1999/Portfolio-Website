@@ -1,7 +1,47 @@
-<nav class="navbar">
 
-</nav>
 <div class="container pt-3">
+  <nav class="navbar navbar-expand-sm">
+    <div class="navbar-brand">
+      <i class="fas fa-code fa-2x text-warning pb-2"></i>
+      <h5 class="text-white d-inline ps-2">Portfolio</h5>
+    </div>
+
+    <button 
+            	class="navbar-toggler" 
+            	type="button" 
+            	data-bs-toggle="collapse" 
+            	data-bs-target="#toggleMobileMenu" 
+            	aria-controls="toggleMobileMenu" 
+            	aria-expanded="false" 
+            	aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-bars" style="color:#ffc107; font-size:28px;"></i>
+
+            </span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            
+                <ul class="navbar-nav ms-auto text-center">
+                    <li>
+                      <a routerLink="/about" class="text-white nav-link">About</a>                    </li>
+                    <li>
+                      <a routerLink="/projects" class="text-white nav-link">Projects</a>
+                    </li>
+                    <li>
+                      <a routerLink="/achievements" class="text-white nav-link">Achievements</a>
+                    </li>
+                    <li>
+                      <a routerLink="/skills" class="text-white nav-link">Skills</a>
+                    </li>
+                </ul>
+                
+
+            </div>
+  </nav>
+
+</div>
+<!-- <div class="container pt-3">
   <div class="row">
     <div class="col d-flex justify-content-start align-items-center">
       <i class="fas fa-code fa-2x text-warning pb-2"></i>
@@ -26,15 +66,15 @@
         <div class="col">
           <a routerLink="/skills" class="text-white navigation-link">Skills</a>
         </div>
-<!-- 
+
         <div class="col">
           <a routerLink="/contact" class="text-white navigation-link">Contact</a>
-        </div> -->
+        </div> 
         
-      </div>
+       </div>
     </div>
   </div>
-</div>
+</div> --> 
 
 
 <router-outlet></router-outlet>

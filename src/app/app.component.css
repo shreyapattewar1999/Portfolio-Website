@@ -1,11 +1,11 @@
-.navigation-link{
+.nav-link{
     border: 2px solid transparent;
 }
 
-.navigation-link:hover{
+.nav-link:hover{
     text-decoration: none;
     border-bottom: 3px solid #f5ba09;
     transition: 0.2s ease;
     font-size: larger;
-    transform: scale(1.2);
+    transform: scale(1.01);
 }
