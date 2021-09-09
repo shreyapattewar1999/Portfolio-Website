@@ -1,14 +1,14 @@
 <div  class="pb-3">
   <div class="container pt-5 ps-7 pe-7 mb-3 pb-3">
     <div *ngFor="let r of skillset">
-      <div class="row pt-2 mb-3 ps-5 pe-5 ms-5 me-5 border border-white">
+      <div class="row pt-2 mb-3 ms-5 me-5 border border-white">
         <div
-          class="col align-self-center"
-          style="text-align: justify; font-family: Baloo Tamma 2, cursive"
+          class="col col-xs-6 d-flex justify-content-start align-self-center"
+          style="text-align: justify; font-family: Baloo Tamma 2"
         >
           <h4 class="text-white">{{ r.name }}</h4>
         </div>
-        <div class="col align-self-center pb-2">
+        <div class="col col-xs-6 d-flex justify-content-end align-self-center pb-2">
           <ngb-rating class="star" [rate]="r.rate"></ngb-rating>
 
           <!-- <div class="progress">
